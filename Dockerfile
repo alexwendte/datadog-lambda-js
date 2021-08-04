@@ -1,6 +1,8 @@
 ARG image
 FROM $image
 
+# RUN apk add --no-cache bash
+
 # Create the directory structure required for AWS Lambda Layer
 RUN mkdir -p /nodejs/node_modules/
 
